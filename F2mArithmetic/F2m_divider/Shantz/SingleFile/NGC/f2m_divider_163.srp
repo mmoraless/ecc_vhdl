@@ -1,0 +1,490 @@
+Release 8.2.01i - xst I.32
+Copyright (c) 1995-2006 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "f2m_divider_163_xst.prj"
+
+---- Target Parameters
+Target Device                      : xc4vfx12ff668-10
+Output File Name                   : "f2m_divider_163.ngc"
+
+---- Source Options
+Top Module Name                    : f2m_divider_163
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/f2m_divider_163.vhd" in Library ecc_core_v1_00_a.
+Entity <f2m_divider_163> compiled.
+Entity <f2m_divider_163> (Architecture <behave>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <f2m_divider_163> in library <ecc_core_v1_00_a> (architecture <behave>) with generics.
+	NUM_BITS = 163
+
+Building hierarchy successfully finished.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <f2m_divider_163> in library <ecc_core_v1_00_a> (Architecture <behave>).
+	NUM_BITS = 163
+Entity <f2m_divider_163> analyzed. Unit <f2m_divider_163> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <f2m_divider_163>.
+    Related source file is "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/f2m_divider_163.vhd".
+WARNING:Xst:646 - Signal <a_mas_b<0>> is assigned but never used.
+WARNING:Xst:646 - Signal <u_mas_v_mas_M<0>> is assigned but never used.
+WARNING:Xst:1780 - Signal <u_mas_v_par> is never used or assigned.
+WARNING:Xst:646 - Signal <v_mas_M<0>> is assigned but never used.
+WARNING:Xst:646 - Signal <u_mas_M<0>> is assigned but never used.
+    Found 1-bit register for signal <done>.
+    Found 163-bit register for signal <x_div_y>.
+    Found 164-bit comparator equal for signal <$cmp_eq0000> created at line 77.
+    Found 164-bit comparator greater for signal <$cmp_gt0000> created at line 74.
+    Found 164-bit 4-to-1 multiplexer for signal <$mux0003>.
+    Found 164-bit 4-to-1 multiplexer for signal <$mux0006>.
+    Found 164-bit register for signal <A>.
+    Found 164-bit xor2 for signal <a_mas_b>.
+    Found 164-bit register for signal <B>.
+    Found 1-bit register for signal <currentState<0>>.
+    Found 164-bit register for signal <U>.
+    Found 164-bit xor2 for signal <u_mas_v>.
+    Found 164-bit register for signal <V>.
+    Summary:
+	inferred 657 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred 328 Multiplexer(s).
+Unit <f2m_divider_163> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 7
+ 1-bit register                                        : 2
+ 163-bit register                                      : 1
+ 164-bit register                                      : 4
+# Comparators                                          : 2
+ 164-bit comparator equal                              : 1
+ 164-bit comparator greater                            : 1
+# Multiplexers                                         : 2
+ 164-bit 4-to-1 multiplexer                            : 2
+# Xors                                                 : 2
+ 164-bit xor2                                          : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '4vfx12.nph' in environment C:\Xilinx.
+WARNING:Xst:2404 -  FFs/Latches <U<163:163>> (without init value) have a constant value of 0 in block <f2m_divider_163>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 820
+ Flip-Flops                                            : 820
+# Comparators                                          : 2
+ 164-bit comparator equal                              : 1
+ 164-bit comparator greater                            : 1
+# Multiplexers                                         : 2
+ 164-bit 4-to-1 multiplexer                            : 2
+# Xors                                                 : 2
+ 164-bit xor2                                          : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch  <V_163> (without init value) has a constant value of 0 in block <f2m_divider_163>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <A_163> (without init value) has a constant value of 0 in block <f2m_divider_163>.
+
+Optimizing unit <f2m_divider_163> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+FlipFlop A_0 has been replicated 1 time(s)
+FlipFlop B_0 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 820
+ Flip-Flops                                            : 820
+
+=========================================================================
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : f2m_divider_163.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 492
+
+Cell Usage :
+# BELS                             : 2513
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 166
+#      LUT3                        : 977
+#      LUT4                        : 739
+#      LUT4_D                      : 57
+#      MUXCY                       : 246
+#      MUXF5                       : 325
+#      VCC                         : 1
+# FlipFlops/Latches                : 820
+#      FD                          : 327
+#      FDR                         : 322
+#      FDRE                        : 164
+#      FDS                         : 6
+#      FDSE                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 4vfx12ff668-10 
+
+ Number of Slices:                    1068  out of   5472    19%  
+ Number of Slice Flip Flops:           820  out of  10944     7%  
+ Number of 4 input LUTs:              1940  out of  10944    17%  
+ Number of IOs:                        492
+ Number of bonded IOBs:                  0  out of    320     0%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | NONE(V_6)              | 820   |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -10
+
+   Minimum period: 12.198ns (Maximum Frequency: 81.984MHz)
+   Minimum input arrival time before clock: 3.265ns
+   Maximum output required time after clock: 0.360ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 12.198ns (frequency: 81.984MHz)
+  Total number of paths / destination ports: 702899 / 983
+-------------------------------------------------------------------------
+Delay:               12.198ns (Levels of Logic = 167)
+  Source:            B_0_1 (FF)
+  Destination:       V_19 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: B_0_1 to V_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              1   0.360   0.765  B_0_1 (B_0_1)
+     LUT2:I0->O            1   0.195   0.000  Mcompar__cmp_gt0000_lut<0> (N84)
+     MUXCY:S->O            1   0.366   0.000  Mcompar__cmp_gt0000_cy<0> (Mcompar__cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<1> (Mcompar__cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<2> (Mcompar__cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<3> (Mcompar__cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<4> (Mcompar__cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<5> (Mcompar__cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<6> (Mcompar__cmp_gt0000_cy<6>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<7> (Mcompar__cmp_gt0000_cy<7>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<8> (Mcompar__cmp_gt0000_cy<8>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<9> (Mcompar__cmp_gt0000_cy<9>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<10> (Mcompar__cmp_gt0000_cy<10>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<11> (Mcompar__cmp_gt0000_cy<11>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<12> (Mcompar__cmp_gt0000_cy<12>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<13> (Mcompar__cmp_gt0000_cy<13>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<14> (Mcompar__cmp_gt0000_cy<14>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<15> (Mcompar__cmp_gt0000_cy<15>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<16> (Mcompar__cmp_gt0000_cy<16>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<17> (Mcompar__cmp_gt0000_cy<17>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<18> (Mcompar__cmp_gt0000_cy<18>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<19> (Mcompar__cmp_gt0000_cy<19>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<20> (Mcompar__cmp_gt0000_cy<20>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<21> (Mcompar__cmp_gt0000_cy<21>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<22> (Mcompar__cmp_gt0000_cy<22>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<23> (Mcompar__cmp_gt0000_cy<23>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<24> (Mcompar__cmp_gt0000_cy<24>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<25> (Mcompar__cmp_gt0000_cy<25>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<26> (Mcompar__cmp_gt0000_cy<26>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<27> (Mcompar__cmp_gt0000_cy<27>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<28> (Mcompar__cmp_gt0000_cy<28>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<29> (Mcompar__cmp_gt0000_cy<29>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<30> (Mcompar__cmp_gt0000_cy<30>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<31> (Mcompar__cmp_gt0000_cy<31>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<32> (Mcompar__cmp_gt0000_cy<32>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<33> (Mcompar__cmp_gt0000_cy<33>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<34> (Mcompar__cmp_gt0000_cy<34>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<35> (Mcompar__cmp_gt0000_cy<35>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<36> (Mcompar__cmp_gt0000_cy<36>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<37> (Mcompar__cmp_gt0000_cy<37>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<38> (Mcompar__cmp_gt0000_cy<38>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<39> (Mcompar__cmp_gt0000_cy<39>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<40> (Mcompar__cmp_gt0000_cy<40>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<41> (Mcompar__cmp_gt0000_cy<41>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<42> (Mcompar__cmp_gt0000_cy<42>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<43> (Mcompar__cmp_gt0000_cy<43>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<44> (Mcompar__cmp_gt0000_cy<44>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<45> (Mcompar__cmp_gt0000_cy<45>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<46> (Mcompar__cmp_gt0000_cy<46>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<47> (Mcompar__cmp_gt0000_cy<47>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<48> (Mcompar__cmp_gt0000_cy<48>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<49> (Mcompar__cmp_gt0000_cy<49>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<50> (Mcompar__cmp_gt0000_cy<50>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<51> (Mcompar__cmp_gt0000_cy<51>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<52> (Mcompar__cmp_gt0000_cy<52>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<53> (Mcompar__cmp_gt0000_cy<53>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<54> (Mcompar__cmp_gt0000_cy<54>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<55> (Mcompar__cmp_gt0000_cy<55>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<56> (Mcompar__cmp_gt0000_cy<56>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<57> (Mcompar__cmp_gt0000_cy<57>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<58> (Mcompar__cmp_gt0000_cy<58>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<59> (Mcompar__cmp_gt0000_cy<59>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<60> (Mcompar__cmp_gt0000_cy<60>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<61> (Mcompar__cmp_gt0000_cy<61>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<62> (Mcompar__cmp_gt0000_cy<62>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<63> (Mcompar__cmp_gt0000_cy<63>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<64> (Mcompar__cmp_gt0000_cy<64>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<65> (Mcompar__cmp_gt0000_cy<65>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<66> (Mcompar__cmp_gt0000_cy<66>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<67> (Mcompar__cmp_gt0000_cy<67>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<68> (Mcompar__cmp_gt0000_cy<68>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<69> (Mcompar__cmp_gt0000_cy<69>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<70> (Mcompar__cmp_gt0000_cy<70>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<71> (Mcompar__cmp_gt0000_cy<71>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<72> (Mcompar__cmp_gt0000_cy<72>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<73> (Mcompar__cmp_gt0000_cy<73>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<74> (Mcompar__cmp_gt0000_cy<74>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<75> (Mcompar__cmp_gt0000_cy<75>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<76> (Mcompar__cmp_gt0000_cy<76>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<77> (Mcompar__cmp_gt0000_cy<77>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<78> (Mcompar__cmp_gt0000_cy<78>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<79> (Mcompar__cmp_gt0000_cy<79>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<80> (Mcompar__cmp_gt0000_cy<80>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<81> (Mcompar__cmp_gt0000_cy<81>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<82> (Mcompar__cmp_gt0000_cy<82>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<83> (Mcompar__cmp_gt0000_cy<83>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<84> (Mcompar__cmp_gt0000_cy<84>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<85> (Mcompar__cmp_gt0000_cy<85>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<86> (Mcompar__cmp_gt0000_cy<86>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<87> (Mcompar__cmp_gt0000_cy<87>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<88> (Mcompar__cmp_gt0000_cy<88>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<89> (Mcompar__cmp_gt0000_cy<89>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<90> (Mcompar__cmp_gt0000_cy<90>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<91> (Mcompar__cmp_gt0000_cy<91>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<92> (Mcompar__cmp_gt0000_cy<92>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<93> (Mcompar__cmp_gt0000_cy<93>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<94> (Mcompar__cmp_gt0000_cy<94>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<95> (Mcompar__cmp_gt0000_cy<95>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<96> (Mcompar__cmp_gt0000_cy<96>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<97> (Mcompar__cmp_gt0000_cy<97>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<98> (Mcompar__cmp_gt0000_cy<98>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<99> (Mcompar__cmp_gt0000_cy<99>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<100> (Mcompar__cmp_gt0000_cy<100>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<101> (Mcompar__cmp_gt0000_cy<101>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<102> (Mcompar__cmp_gt0000_cy<102>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<103> (Mcompar__cmp_gt0000_cy<103>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<104> (Mcompar__cmp_gt0000_cy<104>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<105> (Mcompar__cmp_gt0000_cy<105>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<106> (Mcompar__cmp_gt0000_cy<106>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<107> (Mcompar__cmp_gt0000_cy<107>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<108> (Mcompar__cmp_gt0000_cy<108>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<109> (Mcompar__cmp_gt0000_cy<109>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<110> (Mcompar__cmp_gt0000_cy<110>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<111> (Mcompar__cmp_gt0000_cy<111>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<112> (Mcompar__cmp_gt0000_cy<112>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<113> (Mcompar__cmp_gt0000_cy<113>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<114> (Mcompar__cmp_gt0000_cy<114>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<115> (Mcompar__cmp_gt0000_cy<115>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<116> (Mcompar__cmp_gt0000_cy<116>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<117> (Mcompar__cmp_gt0000_cy<117>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<118> (Mcompar__cmp_gt0000_cy<118>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<119> (Mcompar__cmp_gt0000_cy<119>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<120> (Mcompar__cmp_gt0000_cy<120>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<121> (Mcompar__cmp_gt0000_cy<121>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<122> (Mcompar__cmp_gt0000_cy<122>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<123> (Mcompar__cmp_gt0000_cy<123>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<124> (Mcompar__cmp_gt0000_cy<124>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<125> (Mcompar__cmp_gt0000_cy<125>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<126> (Mcompar__cmp_gt0000_cy<126>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<127> (Mcompar__cmp_gt0000_cy<127>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<128> (Mcompar__cmp_gt0000_cy<128>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<129> (Mcompar__cmp_gt0000_cy<129>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<130> (Mcompar__cmp_gt0000_cy<130>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<131> (Mcompar__cmp_gt0000_cy<131>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<132> (Mcompar__cmp_gt0000_cy<132>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<133> (Mcompar__cmp_gt0000_cy<133>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<134> (Mcompar__cmp_gt0000_cy<134>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<135> (Mcompar__cmp_gt0000_cy<135>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<136> (Mcompar__cmp_gt0000_cy<136>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<137> (Mcompar__cmp_gt0000_cy<137>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<138> (Mcompar__cmp_gt0000_cy<138>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<139> (Mcompar__cmp_gt0000_cy<139>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<140> (Mcompar__cmp_gt0000_cy<140>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<141> (Mcompar__cmp_gt0000_cy<141>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<142> (Mcompar__cmp_gt0000_cy<142>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<143> (Mcompar__cmp_gt0000_cy<143>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<144> (Mcompar__cmp_gt0000_cy<144>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<145> (Mcompar__cmp_gt0000_cy<145>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<146> (Mcompar__cmp_gt0000_cy<146>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<147> (Mcompar__cmp_gt0000_cy<147>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<148> (Mcompar__cmp_gt0000_cy<148>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<149> (Mcompar__cmp_gt0000_cy<149>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<150> (Mcompar__cmp_gt0000_cy<150>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<151> (Mcompar__cmp_gt0000_cy<151>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<152> (Mcompar__cmp_gt0000_cy<152>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<153> (Mcompar__cmp_gt0000_cy<153>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<154> (Mcompar__cmp_gt0000_cy<154>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<155> (Mcompar__cmp_gt0000_cy<155>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<156> (Mcompar__cmp_gt0000_cy<156>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<157> (Mcompar__cmp_gt0000_cy<157>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<158> (Mcompar__cmp_gt0000_cy<158>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<159> (Mcompar__cmp_gt0000_cy<159>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<160> (Mcompar__cmp_gt0000_cy<160>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<161> (Mcompar__cmp_gt0000_cy<161>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<162> (Mcompar__cmp_gt0000_cy<162>)
+     MUXCY:CI->O          56   0.369   1.291  Mcompar__cmp_gt0000_cy<163> (Mcompar__cmp_gt0000_cy<163>)
+     LUT4_D:I3->O         17   0.195   0.862  _not00071 (_not0007)
+     LUT3:I2->O            1   0.195   0.000  B_5_rstpot (N1805)
+     FDR:D                     0.391          B_5
+    ----------------------------------------
+    Total                     12.198ns (9.281ns logic, 2.917ns route)
+                                       (76.1% logic, 23.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2130 / 820
+-------------------------------------------------------------------------
+Offset:              3.265ns (Levels of Logic = 3)
+  Source:            rst (PAD)
+  Destination:       U_125 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to U_125
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3:I0->O           32   0.195   1.352  _not0006_SW0 (N1637)
+     LUT4_D:I1->O          8   0.195   0.706  _not0006_29 (_not000629)
+     LUT3:I2->O            1   0.195   0.000  U_101_rstpot (N2019)
+     FD:D                      0.391          U_101
+    ----------------------------------------
+    Total                      3.265ns (1.207ns logic, 2.058ns route)
+                                       (37.0% logic, 63.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 164 / 164
+-------------------------------------------------------------------------
+Offset:              0.360ns (Levels of Logic = 0)
+  Source:            done (FF)
+  Destination:       done (PAD)
+  Source Clock:      clk rising
+
+  Data Path: done to done
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             0   0.360   0.000  done (done)
+    ----------------------------------------
+    Total                      0.360ns (0.360ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+CPU : 49.23 / 49.36 s | Elapsed : 49.00 / 49.00 s
+ 
+--> 
+
+Total memory usage is 204404 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
