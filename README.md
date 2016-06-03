@@ -4,7 +4,7 @@
 This VHDL source code includes a set of files describing 
 hardware modules for finite field arithmetic in GF(2^m), arithmetic 
 for elliptic curve point addition/double and for scalar multiplication.
-The VHDL code was written entirely by Miguel Morales-Sandoval 
+The VHDL code was entirely written by Miguel Morales-Sandoval 
 (morales.sandoval.miguel@gmail.com) from 2004 to 2008 when he was 
 an MSc and Ph.D. student at the Computer Science department in INAOE,
 Mexico.
