@@ -1,0 +1,479 @@
+Release 8.2.01i - xst I.32
+Copyright (c) 1995-2006 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "f2m_divider_163_xst.prj"
+
+---- Target Parameters
+Target Device                      : xc4vfx12ff668-10
+Output File Name                   : "f2m_divider_163.ngc"
+
+---- Source Options
+Top Module Name                    : f2m_divider_163
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/celda_A.vhd" in Library ecc_core_v1_00_a.
+Entity <celda_A> compiled.
+Entity <celda_A> (Architecture <behave>) compiled.
+Compiling vhdl file "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/celda_U.vhd" in Library ecc_core_v1_00_a.
+Entity <celda_U> compiled.
+Entity <celda_U> (Architecture <behave>) compiled.
+Compiling vhdl file "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/mod_P.vhd" in Library ecc_core_v1_00_a.
+Entity <mod_P> compiled.
+Entity <mod_P> (Architecture <behave>) compiled.
+Compiling vhdl file "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/celda_B.vhd" in Library ecc_core_v1_00_a.
+Entity <celda_B> compiled.
+Entity <celda_B> (Architecture <behave>) compiled.
+Compiling vhdl file "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/celda_V.vhd" in Library ecc_core_v1_00_a.
+Entity <celda_V> compiled.
+Entity <celda_V> (Architecture <behave>) compiled.
+Compiling vhdl file "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/gura_modular.vhd" in Library ecc_core_v1_00_a.
+Entity <f2m_divider_163> compiled.
+Entity <f2m_divider_163> (Architecture <behave>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <f2m_divider_163> in library <ecc_core_v1_00_a> (architecture <behave>) with generics.
+	NUM_BITS = 163
+
+Analyzing hierarchy for entity <celda_A> in library <ecc_core_v1_00_a> (architecture <behave>) with generics.
+	NUM_BITS = 163
+
+Analyzing hierarchy for entity <celda_U> in library <ecc_core_v1_00_a> (architecture <behave>) with generics.
+	NUM_BITS = 163
+
+Analyzing hierarchy for entity <mod_P> in library <ecc_core_v1_00_a> (architecture <behave>) with generics.
+	NUM_BITS = 163
+
+Analyzing hierarchy for entity <celda_B> in library <ecc_core_v1_00_a> (architecture <behave>) with generics.
+	NUM_BITS = 163
+
+Analyzing hierarchy for entity <celda_V> in library <ecc_core_v1_00_a> (architecture <behave>) with generics.
+	NUM_BITS = 163
+
+Building hierarchy successfully finished.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <f2m_divider_163> in library <ecc_core_v1_00_a> (Architecture <behave>).
+	NUM_BITS = 163
+Entity <f2m_divider_163> analyzed. Unit <f2m_divider_163> generated.
+
+Analyzing generic Entity <celda_A> in library <ecc_core_v1_00_a> (Architecture <behave>).
+	NUM_BITS = 163
+Entity <celda_A> analyzed. Unit <celda_A> generated.
+
+Analyzing generic Entity <celda_U> in library <ecc_core_v1_00_a> (Architecture <behave>).
+	NUM_BITS = 163
+Entity <celda_U> analyzed. Unit <celda_U> generated.
+
+Analyzing generic Entity <mod_P> in library <ecc_core_v1_00_a> (Architecture <behave>).
+	NUM_BITS = 163
+Entity <mod_P> analyzed. Unit <mod_P> generated.
+
+Analyzing generic Entity <celda_B> in library <ecc_core_v1_00_a> (Architecture <behave>).
+	NUM_BITS = 163
+Entity <celda_B> analyzed. Unit <celda_B> generated.
+
+Analyzing generic Entity <celda_V> in library <ecc_core_v1_00_a> (Architecture <behave>).
+	NUM_BITS = 163
+Entity <celda_V> analyzed. Unit <celda_V> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <celda_A>.
+    Related source file is "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/celda_A.vhd".
+WARNING:Xst:646 - Signal <R1<0>> is assigned but never used.
+    Found 164-bit xor2 for signal <R1>.
+Unit <celda_A> synthesized.
+
+
+Synthesizing Unit <celda_U>.
+    Related source file is "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/celda_U.vhd".
+    Found 164-bit xor2 for signal <toU>.
+Unit <celda_U> synthesized.
+
+
+Synthesizing Unit <mod_P>.
+    Related source file is "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/mod_P.vhd".
+WARNING:Xst:646 - Signal <R1<0>> is assigned but never used.
+Unit <mod_P> synthesized.
+
+
+Synthesizing Unit <celda_B>.
+    Related source file is "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/celda_B.vhd".
+    Found 164-bit 4-to-1 multiplexer for signal <toB>.
+    Summary:
+	inferred 164 Multiplexer(s).
+Unit <celda_B> synthesized.
+
+
+Synthesizing Unit <celda_V>.
+    Related source file is "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/celda_V.vhd".
+    Found 164-bit 4-to-1 multiplexer for signal <toV>.
+    Summary:
+	inferred 164 Multiplexer(s).
+Unit <celda_V> synthesized.
+
+
+Synthesizing Unit <f2m_divider_163>.
+    Related source file is "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/gura_modular.vhd".
+    Found finite state machine <FSM_0> for signal <currentState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | load1                                          |
+    | Power Up State     | end_state                                      |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found 4x2-bit ROM for signal <CASO>.
+    Found 1-bit register for signal <done>.
+    Found 163-bit register for signal <x_div_y>.
+    Found 164-bit comparator equal for signal <$cmp_eq0003> created at line 64.
+    Found 8-bit comparator greater for signal <$cmp_gt0000> created at line 61.
+    Found 164-bit register for signal <A>.
+    Found 164-bit register for signal <B>.
+    Found 8-bit down counter for signal <CA>.
+    Found 8-bit down counter for signal <CB>.
+    Found 164-bit register for signal <U>.
+    Found 164-bit register for signal <V>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 ROM(s).
+	inferred   2 Counter(s).
+	inferred 820 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <f2m_divider_163> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 4x2-bit ROM                                           : 1
+# Counters                                             : 2
+ 8-bit down counter                                    : 2
+# Registers                                            : 6
+ 1-bit register                                        : 1
+ 163-bit register                                      : 1
+ 164-bit register                                      : 4
+# Comparators                                          : 2
+ 164-bit comparator equal                              : 1
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 2
+ 164-bit 4-to-1 multiplexer                            : 2
+# Xors                                                 : 2
+ 164-bit xor2                                          : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <currentState> on signal <currentState[1:2]> with gray encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ end_state | 00
+ load1     | 01
+ cycle     | 11
+-----------------------
+Loading device for application Rf_Device from file '4vfx12.nph' in environment C:\Xilinx.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 4x2-bit ROM                                           : 1
+# Counters                                             : 2
+ 8-bit down counter                                    : 2
+# Registers                                            : 838
+ Flip-Flops                                            : 838
+# Comparators                                          : 2
+ 164-bit comparator equal                              : 1
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 2
+ 164-bit 4-to-1 multiplexer                            : 2
+# Xors                                                 : 2
+ 164-bit xor2                                          : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <f2m_divider_163> ...
+
+Optimizing unit <celda_U> ...
+
+Optimizing unit <mod_P> ...
+
+Optimizing unit <celda_A> ...
+
+Mapping all equations...
+WARNING:Xst:1710 - FF/Latch  <A_163> (without init value) has a constant value of 0 in block <f2m_divider_163>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <U_163> (without init value) has a constant value of 0 in block <f2m_divider_163>.
+Building and optimizing final netlist ...
+FlipFlop A_0 has been replicated 2 time(s)
+FlipFlop currentState_FFd1 has been replicated 3 time(s)
+FlipFlop currentState_FFd2 has been replicated 4 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 845
+ Flip-Flops                                            : 845
+
+=========================================================================
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : f2m_divider_163.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 492
+
+Cell Usage :
+# BELS                             : 1883
+#      GND                         : 1
+#      LUT2                        : 15
+#      LUT2_D                      : 2
+#      LUT3                        : 187
+#      LUT3_D                      : 6
+#      LUT3_L                      : 6
+#      LUT4                        : 887
+#      LUT4_D                      : 383
+#      LUT4_L                      : 300
+#      MUXCY                       : 90
+#      MUXF5                       : 5
+#      VCC                         : 1
+# FlipFlops/Latches                : 845
+#      FD                          : 322
+#      FDR                         : 501
+#      FDRS                        : 5
+#      FDS                         : 17
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 4vfx12ff668-10 
+
+ Number of Slices:                     903  out of   5472    16%  
+ Number of Slice Flip Flops:           845  out of  10944     7%  
+ Number of 4 input LUTs:              1786  out of  10944    16%  
+ Number of IOs:                        492
+ Number of bonded IOBs:                  0  out of    320     0%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | NONE(x_div_y_61)       | 845   |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -10
+
+   Minimum period: 6.819ns (Maximum Frequency: 146.640MHz)
+   Minimum input arrival time before clock: 3.771ns
+   Maximum output required time after clock: 0.360ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.819ns (frequency: 146.640MHz)
+  Total number of paths / destination ports: 576535 / 855
+-------------------------------------------------------------------------
+Delay:               6.819ns (Levels of Logic = 35)
+  Source:            A_64 (FF)
+  Destination:       A_1 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: A_64 to A_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.360   0.781  A_64 (A_64)
+     LUT4:I0->O            1   0.195   0.000  Mcompar__cmp_eq0003_lut<32> (N47)
+     MUXCY:S->O            1   0.366   0.000  Mcompar__cmp_eq0003_cy<32> (Mcompar__cmp_eq0003_cy<32>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<33> (Mcompar__cmp_eq0003_cy<33>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<34> (Mcompar__cmp_eq0003_cy<34>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<35> (Mcompar__cmp_eq0003_cy<35>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<36> (Mcompar__cmp_eq0003_cy<36>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<37> (Mcompar__cmp_eq0003_cy<37>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<38> (Mcompar__cmp_eq0003_cy<38>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<39> (Mcompar__cmp_eq0003_cy<39>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<40> (Mcompar__cmp_eq0003_cy<40>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<41> (Mcompar__cmp_eq0003_cy<41>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<42> (Mcompar__cmp_eq0003_cy<42>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<43> (Mcompar__cmp_eq0003_cy<43>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<44> (Mcompar__cmp_eq0003_cy<44>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<45> (Mcompar__cmp_eq0003_cy<45>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<46> (Mcompar__cmp_eq0003_cy<46>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<47> (Mcompar__cmp_eq0003_cy<47>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<48> (Mcompar__cmp_eq0003_cy<48>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<49> (Mcompar__cmp_eq0003_cy<49>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<50> (Mcompar__cmp_eq0003_cy<50>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<51> (Mcompar__cmp_eq0003_cy<51>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<52> (Mcompar__cmp_eq0003_cy<52>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<53> (Mcompar__cmp_eq0003_cy<53>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<54> (Mcompar__cmp_eq0003_cy<54>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<55> (Mcompar__cmp_eq0003_cy<55>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<56> (Mcompar__cmp_eq0003_cy<56>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_eq0003_cy<57> (Mcompar__cmp_eq0003_cy<57>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_eq0003_cy<58> (Mcompar__cmp_eq0003_cy<58>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_eq0003_cy<59> (Mcompar__cmp_eq0003_cy<59>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_eq0003_cy<60> (Mcompar__cmp_eq0003_cy<60>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_eq0003_cy<61> (Mcompar__cmp_eq0003_cy<61>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_eq0003_cy<62> (Mcompar__cmp_eq0003_cy<62>)
+     MUXCY:CI->O         125   0.369   1.756  Mcompar__cmp_eq0003_cy<63> (Mcompar__cmp_eq0003_cy<63>)
+     LUT4_D:I1->O         16   0.195   0.877  _mux0001<0>21 (N610)
+     LUT4:I2->O            1   0.195   0.000  _mux0003<95>1 (_mux0003<95>)
+     FDR:D                     0.391          U_95
+    ----------------------------------------
+    Total                      6.819ns (3.407ns logic, 3.413ns route)
+                                       (50.0% logic, 50.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2483 / 845
+-------------------------------------------------------------------------
+Offset:              3.771ns (Levels of Logic = 4)
+  Source:            rst (PAD)
+  Destination:       V_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to V_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3_D:I0->O          2   0.195   0.730  _mux0002<163>11_SW0 (N1418)
+     LUT4:I1->O            9   0.195   0.836  Mcompar__cmp_eq000311_SW6_2 (Mcompar__cmp_eq000311_SW61)
+     LUT4_D:I1->O         13   0.195   0.803  _mux0002<100>21_4 (_mux0002<100>213)
+     LUT4:I2->O            1   0.195   0.000  _mux0004<47> (_mux0004<47>)
+     FD:D                      0.391          V_47
+    ----------------------------------------
+    Total                      3.771ns (1.402ns logic, 2.369ns route)
+                                       (37.2% logic, 62.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 164 / 164
+-------------------------------------------------------------------------
+Offset:              0.360ns (Levels of Logic = 0)
+  Source:            done (FF)
+  Destination:       done (PAD)
+  Source Clock:      clk rising
+
+  Data Path: done to done
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.360   0.000  done (done)
+    ----------------------------------------
+    Total                      0.360ns (0.360ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+CPU : 100.08 / 100.22 s | Elapsed : 100.00 / 100.00 s
+ 
+--> 
+
+Total memory usage is 209204 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
