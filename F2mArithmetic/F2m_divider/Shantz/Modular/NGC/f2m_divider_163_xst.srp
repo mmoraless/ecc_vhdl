@@ -1,0 +1,599 @@
+Release 8.2.01i - xst I.32
+Copyright (c) 1995-2006 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "f2m_divider_163_xst.prj"
+
+---- Target Parameters
+Target Device                      : xc4vfx12ff668-10
+Output File Name                   : "f2m_divider_163.ngc"
+
+---- Source Options
+Top Module Name                    : f2m_divider_163
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3215 - Unit ecc_core_v1_00_a/f2m_divider_163 is now defined in a different file: was G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/gura_modular.vhd, now is G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/Modular/shantz_modular.vhd
+WARNING:HDLParsers:3215 - Unit ecc_core_v1_00_a/f2m_divider_163/behave is now defined in a different file: was G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/gura_modular.vhd, now is G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/Modular/shantz_modular.vhd
+WARNING:HDLParsers:3215 - Unit ecc_core_v1_00_a/celda_V is now defined in a different file: was G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/celda_V.vhd, now is G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/Modular/celda_V.vhd
+WARNING:HDLParsers:3215 - Unit ecc_core_v1_00_a/celda_V/behave is now defined in a different file: was G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/celda_V.vhd, now is G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/Modular/celda_V.vhd
+WARNING:HDLParsers:3215 - Unit ecc_core_v1_00_a/celda_U is now defined in a different file: was G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/celda_U.vhd, now is G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/Modular/celda_U.vhd
+WARNING:HDLParsers:3215 - Unit ecc_core_v1_00_a/celda_U/behave is now defined in a different file: was G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/celda_U.vhd, now is G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/Modular/celda_U.vhd
+WARNING:HDLParsers:3215 - Unit ecc_core_v1_00_a/celda_B is now defined in a different file: was G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/celda_B.vhd, now is G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/Modular/celda_B.vhd
+WARNING:HDLParsers:3215 - Unit ecc_core_v1_00_a/celda_B/behave is now defined in a different file: was G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/celda_B.vhd, now is G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/Modular/celda_B.vhd
+WARNING:HDLParsers:3215 - Unit ecc_core_v1_00_a/celda_A is now defined in a different file: was G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/celda_A.vhd, now is G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/Modular/celda_A.vhd
+WARNING:HDLParsers:3215 - Unit ecc_core_v1_00_a/celda_A/behave is now defined in a different file: was G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Gura/Modular/celda_A.vhd, now is G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/Modular/celda_A.vhd
+Compiling vhdl file "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/Modular/celda_A.vhd" in Library ecc_core_v1_00_a.
+Architecture behave of Entity celda_a is up to date.
+Compiling vhdl file "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/Modular/celda_U.vhd" in Library ecc_core_v1_00_a.
+Architecture behave of Entity celda_u is up to date.
+Compiling vhdl file "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/Modular/celda_B.vhd" in Library ecc_core_v1_00_a.
+Architecture behave of Entity celda_b is up to date.
+Compiling vhdl file "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/Modular/celda_V.vhd" in Library ecc_core_v1_00_a.
+Architecture behave of Entity celda_v is up to date.
+Compiling vhdl file "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/Modular/shantz_modular.vhd" in Library ecc_core_v1_00_a.
+Entity <f2m_divider_163> compiled.
+Entity <f2m_divider_163> (Architecture <behave>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <f2m_divider_163> in library <ecc_core_v1_00_a> (architecture <behave>) with generics.
+	NUM_BITS = 163
+
+Analyzing hierarchy for entity <celda_A> in library <ecc_core_v1_00_a> (architecture <behave>) with generics.
+	NUM_BITS = 163
+
+Analyzing hierarchy for entity <celda_U> in library <ecc_core_v1_00_a> (architecture <behave>) with generics.
+	NUM_BITS = 163
+
+Analyzing hierarchy for entity <celda_B> in library <ecc_core_v1_00_a> (architecture <behave>) with generics.
+	NUM_BITS = 163
+
+Analyzing hierarchy for entity <celda_V> in library <ecc_core_v1_00_a> (architecture <behave>) with generics.
+	NUM_BITS = 163
+
+Building hierarchy successfully finished.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <f2m_divider_163> in library <ecc_core_v1_00_a> (Architecture <behave>).
+	NUM_BITS = 163
+Entity <f2m_divider_163> analyzed. Unit <f2m_divider_163> generated.
+
+Analyzing generic Entity <celda_A> in library <ecc_core_v1_00_a> (Architecture <behave>).
+	NUM_BITS = 163
+Entity <celda_A> analyzed. Unit <celda_A> generated.
+
+Analyzing generic Entity <celda_U> in library <ecc_core_v1_00_a> (Architecture <behave>).
+	NUM_BITS = 163
+Entity <celda_U> analyzed. Unit <celda_U> generated.
+
+Analyzing generic Entity <celda_B> in library <ecc_core_v1_00_a> (Architecture <behave>).
+	NUM_BITS = 163
+Entity <celda_B> analyzed. Unit <celda_B> generated.
+
+Analyzing generic Entity <celda_V> in library <ecc_core_v1_00_a> (Architecture <behave>).
+	NUM_BITS = 163
+Entity <celda_V> analyzed. Unit <celda_V> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <celda_A>.
+    Related source file is "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/Modular/celda_A.vhd".
+WARNING:Xst:646 - Signal <R1<0>> is assigned but never used.
+    Found 164-bit register for signal <RegA>.
+    Found 164-bit xor2 for signal <R1>.
+    Summary:
+	inferred 164 D-type flip-flop(s).
+Unit <celda_A> synthesized.
+
+
+Synthesizing Unit <celda_U>.
+    Related source file is "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/Modular/celda_U.vhd".
+WARNING:Xst:646 - Signal <R1<0>> is assigned but never used.
+    Found 164-bit register for signal <RegU>.
+    Found 164-bit 4-to-1 multiplexer for signal <R1>.
+    Found 164-bit xor2 for signal <xr1>.
+    Found 164-bit xor2 for signal <xr2>.
+    Summary:
+	inferred 164 D-type flip-flop(s).
+	inferred 164 Multiplexer(s).
+Unit <celda_U> synthesized.
+
+
+Synthesizing Unit <celda_B>.
+    Related source file is "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/Modular/celda_B.vhd".
+    Found 164-bit register for signal <RegB>.
+    Found 164-bit 4-to-1 multiplexer for signal <toB>.
+    Summary:
+	inferred 164 D-type flip-flop(s).
+	inferred 164 Multiplexer(s).
+Unit <celda_B> synthesized.
+
+
+Synthesizing Unit <celda_V>.
+    Related source file is "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/Modular/celda_V.vhd".
+    Found 164-bit register for signal <RegV>.
+    Found 164-bit 4-to-1 multiplexer for signal <toV>.
+    Summary:
+	inferred 164 D-type flip-flop(s).
+	inferred 164 Multiplexer(s).
+Unit <celda_V> synthesized.
+
+
+Synthesizing Unit <f2m_divider_163>.
+    Related source file is "G:/CodePhD/ECC/VHDL/F2mArithmetic/F2m_divider/Shantz/Modular/shantz_modular.vhd".
+    Found finite state machine <FSM_0> for signal <currentState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | load1                                          |
+    | Power Up State     | end_state                                      |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Using one-hot encoding for signal <CASO>.
+    Found 1-bit register for signal <done>.
+    Found 163-bit register for signal <x_div_y>.
+    Found 164-bit comparator equal for signal <$cmp_eq0002> created at line 85.
+    Found 164-bit comparator greater for signal <$cmp_gt0000> created at line 82.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred 164 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <f2m_divider_163> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 6
+ 1-bit register                                        : 1
+ 163-bit register                                      : 1
+ 164-bit register                                      : 4
+# Comparators                                          : 2
+ 164-bit comparator equal                              : 1
+ 164-bit comparator greater                            : 1
+# Multiplexers                                         : 3
+ 164-bit 4-to-1 multiplexer                            : 3
+# Xors                                                 : 3
+ 164-bit xor2                                          : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <currentState> on signal <currentState[1:2]> with gray encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ end_state | 00
+ load1     | 01
+ cycle     | 11
+-----------------------
+Loading device for application Rf_Device from file '4vfx12.nph' in environment C:\Xilinx.
+WARNING:Xst:2404 -  FFs/Latches <RegA<163:163>> (without init value) have a constant value of 0 in block <celda_A>.
+WARNING:Xst:2404 -  FFs/Latches <RegU<163:163>> (without init value) have a constant value of 0 in block <celda_U>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Registers                                            : 820
+ Flip-Flops                                            : 820
+# Comparators                                          : 2
+ 164-bit comparator equal                              : 1
+ 164-bit comparator greater                            : 1
+# Multiplexers                                         : 3
+ 164-bit 4-to-1 multiplexer                            : 3
+# Xors                                                 : 3
+ 164-bit xor2                                          : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <f2m_divider_163> ...
+
+Optimizing unit <celda_V> ...
+
+Optimizing unit <celda_A> ...
+
+Optimizing unit <celda_U> ...
+
+Optimizing unit <celda_B> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+FlipFlop celda_reg_A/RegA_162 has been replicated 1 time(s)
+FlipFlop celda_reg_B/RegB_0 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 822
+ Flip-Flops                                            : 822
+
+=========================================================================
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : f2m_divider_163.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 492
+
+Cell Usage :
+# BELS                             : 1872
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 166
+#      LUT2_D                      : 1
+#      LUT3                        : 652
+#      LUT3_D                      : 1
+#      LUT4                        : 170
+#      LUT4_D                      : 352
+#      LUT4_L                      : 275
+#      MUXCY                       : 246
+#      MUXF5                       : 6
+#      VCC                         : 1
+# FlipFlops/Latches                : 822
+#      FD                          : 329
+#      FDR                         : 328
+#      FDRE                        : 164
+#      FDSE                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 4vfx12ff668-10 
+
+ Number of Slices:                     890  out of   5472    16%  
+ Number of Slice Flip Flops:           822  out of  10944     7%  
+ Number of 4 input LUTs:              1618  out of  10944    14%  
+ Number of IOs:                        492
+ Number of bonded IOBs:                  0  out of    320     0%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)     | Load  |
+-----------------------------------+---------------------------+-------+
+clk                                | NONE(celda_reg_B/RegB_156)| 822   |
+-----------------------------------+---------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -10
+
+   Minimum period: 12.193ns (Maximum Frequency: 82.013MHz)
+   Minimum input arrival time before clock: 4.522ns
+   Maximum output required time after clock: 0.360ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 12.193ns (frequency: 82.013MHz)
+  Total number of paths / destination ports: 385596 / 986
+-------------------------------------------------------------------------
+Delay:               12.193ns (Levels of Logic = 167)
+  Source:            celda_reg_B/RegB_0_1 (FF)
+  Destination:       celda_reg_A/RegA_161 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: celda_reg_B/RegB_0_1 to celda_reg_A/RegA_161
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.360   0.765  celda_reg_B/RegB_0_1 (celda_reg_B/RegB_0_1)
+     LUT2:I0->O            1   0.195   0.000  Mcompar__cmp_gt0000_lut<0> (N84)
+     MUXCY:S->O            1   0.366   0.000  Mcompar__cmp_gt0000_cy<0> (Mcompar__cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<1> (Mcompar__cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<2> (Mcompar__cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<3> (Mcompar__cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<4> (Mcompar__cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<5> (Mcompar__cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<6> (Mcompar__cmp_gt0000_cy<6>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<7> (Mcompar__cmp_gt0000_cy<7>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<8> (Mcompar__cmp_gt0000_cy<8>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<9> (Mcompar__cmp_gt0000_cy<9>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<10> (Mcompar__cmp_gt0000_cy<10>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<11> (Mcompar__cmp_gt0000_cy<11>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<12> (Mcompar__cmp_gt0000_cy<12>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<13> (Mcompar__cmp_gt0000_cy<13>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<14> (Mcompar__cmp_gt0000_cy<14>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<15> (Mcompar__cmp_gt0000_cy<15>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<16> (Mcompar__cmp_gt0000_cy<16>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<17> (Mcompar__cmp_gt0000_cy<17>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<18> (Mcompar__cmp_gt0000_cy<18>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<19> (Mcompar__cmp_gt0000_cy<19>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<20> (Mcompar__cmp_gt0000_cy<20>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<21> (Mcompar__cmp_gt0000_cy<21>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<22> (Mcompar__cmp_gt0000_cy<22>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<23> (Mcompar__cmp_gt0000_cy<23>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<24> (Mcompar__cmp_gt0000_cy<24>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<25> (Mcompar__cmp_gt0000_cy<25>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<26> (Mcompar__cmp_gt0000_cy<26>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<27> (Mcompar__cmp_gt0000_cy<27>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<28> (Mcompar__cmp_gt0000_cy<28>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<29> (Mcompar__cmp_gt0000_cy<29>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<30> (Mcompar__cmp_gt0000_cy<30>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<31> (Mcompar__cmp_gt0000_cy<31>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<32> (Mcompar__cmp_gt0000_cy<32>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<33> (Mcompar__cmp_gt0000_cy<33>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<34> (Mcompar__cmp_gt0000_cy<34>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<35> (Mcompar__cmp_gt0000_cy<35>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<36> (Mcompar__cmp_gt0000_cy<36>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<37> (Mcompar__cmp_gt0000_cy<37>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<38> (Mcompar__cmp_gt0000_cy<38>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<39> (Mcompar__cmp_gt0000_cy<39>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<40> (Mcompar__cmp_gt0000_cy<40>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<41> (Mcompar__cmp_gt0000_cy<41>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<42> (Mcompar__cmp_gt0000_cy<42>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<43> (Mcompar__cmp_gt0000_cy<43>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<44> (Mcompar__cmp_gt0000_cy<44>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<45> (Mcompar__cmp_gt0000_cy<45>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<46> (Mcompar__cmp_gt0000_cy<46>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<47> (Mcompar__cmp_gt0000_cy<47>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<48> (Mcompar__cmp_gt0000_cy<48>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<49> (Mcompar__cmp_gt0000_cy<49>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<50> (Mcompar__cmp_gt0000_cy<50>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<51> (Mcompar__cmp_gt0000_cy<51>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<52> (Mcompar__cmp_gt0000_cy<52>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<53> (Mcompar__cmp_gt0000_cy<53>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<54> (Mcompar__cmp_gt0000_cy<54>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<55> (Mcompar__cmp_gt0000_cy<55>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<56> (Mcompar__cmp_gt0000_cy<56>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<57> (Mcompar__cmp_gt0000_cy<57>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<58> (Mcompar__cmp_gt0000_cy<58>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<59> (Mcompar__cmp_gt0000_cy<59>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<60> (Mcompar__cmp_gt0000_cy<60>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<61> (Mcompar__cmp_gt0000_cy<61>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<62> (Mcompar__cmp_gt0000_cy<62>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<63> (Mcompar__cmp_gt0000_cy<63>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<64> (Mcompar__cmp_gt0000_cy<64>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<65> (Mcompar__cmp_gt0000_cy<65>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<66> (Mcompar__cmp_gt0000_cy<66>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<67> (Mcompar__cmp_gt0000_cy<67>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<68> (Mcompar__cmp_gt0000_cy<68>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<69> (Mcompar__cmp_gt0000_cy<69>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<70> (Mcompar__cmp_gt0000_cy<70>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<71> (Mcompar__cmp_gt0000_cy<71>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<72> (Mcompar__cmp_gt0000_cy<72>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<73> (Mcompar__cmp_gt0000_cy<73>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<74> (Mcompar__cmp_gt0000_cy<74>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<75> (Mcompar__cmp_gt0000_cy<75>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<76> (Mcompar__cmp_gt0000_cy<76>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<77> (Mcompar__cmp_gt0000_cy<77>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<78> (Mcompar__cmp_gt0000_cy<78>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<79> (Mcompar__cmp_gt0000_cy<79>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<80> (Mcompar__cmp_gt0000_cy<80>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<81> (Mcompar__cmp_gt0000_cy<81>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<82> (Mcompar__cmp_gt0000_cy<82>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<83> (Mcompar__cmp_gt0000_cy<83>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<84> (Mcompar__cmp_gt0000_cy<84>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<85> (Mcompar__cmp_gt0000_cy<85>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<86> (Mcompar__cmp_gt0000_cy<86>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<87> (Mcompar__cmp_gt0000_cy<87>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<88> (Mcompar__cmp_gt0000_cy<88>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<89> (Mcompar__cmp_gt0000_cy<89>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<90> (Mcompar__cmp_gt0000_cy<90>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<91> (Mcompar__cmp_gt0000_cy<91>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<92> (Mcompar__cmp_gt0000_cy<92>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<93> (Mcompar__cmp_gt0000_cy<93>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<94> (Mcompar__cmp_gt0000_cy<94>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<95> (Mcompar__cmp_gt0000_cy<95>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<96> (Mcompar__cmp_gt0000_cy<96>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<97> (Mcompar__cmp_gt0000_cy<97>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<98> (Mcompar__cmp_gt0000_cy<98>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<99> (Mcompar__cmp_gt0000_cy<99>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<100> (Mcompar__cmp_gt0000_cy<100>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<101> (Mcompar__cmp_gt0000_cy<101>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<102> (Mcompar__cmp_gt0000_cy<102>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<103> (Mcompar__cmp_gt0000_cy<103>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<104> (Mcompar__cmp_gt0000_cy<104>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<105> (Mcompar__cmp_gt0000_cy<105>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<106> (Mcompar__cmp_gt0000_cy<106>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<107> (Mcompar__cmp_gt0000_cy<107>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<108> (Mcompar__cmp_gt0000_cy<108>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<109> (Mcompar__cmp_gt0000_cy<109>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<110> (Mcompar__cmp_gt0000_cy<110>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<111> (Mcompar__cmp_gt0000_cy<111>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<112> (Mcompar__cmp_gt0000_cy<112>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<113> (Mcompar__cmp_gt0000_cy<113>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<114> (Mcompar__cmp_gt0000_cy<114>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<115> (Mcompar__cmp_gt0000_cy<115>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<116> (Mcompar__cmp_gt0000_cy<116>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<117> (Mcompar__cmp_gt0000_cy<117>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<118> (Mcompar__cmp_gt0000_cy<118>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<119> (Mcompar__cmp_gt0000_cy<119>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<120> (Mcompar__cmp_gt0000_cy<120>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<121> (Mcompar__cmp_gt0000_cy<121>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<122> (Mcompar__cmp_gt0000_cy<122>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<123> (Mcompar__cmp_gt0000_cy<123>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<124> (Mcompar__cmp_gt0000_cy<124>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<125> (Mcompar__cmp_gt0000_cy<125>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<126> (Mcompar__cmp_gt0000_cy<126>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<127> (Mcompar__cmp_gt0000_cy<127>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<128> (Mcompar__cmp_gt0000_cy<128>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<129> (Mcompar__cmp_gt0000_cy<129>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<130> (Mcompar__cmp_gt0000_cy<130>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<131> (Mcompar__cmp_gt0000_cy<131>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<132> (Mcompar__cmp_gt0000_cy<132>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<133> (Mcompar__cmp_gt0000_cy<133>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<134> (Mcompar__cmp_gt0000_cy<134>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<135> (Mcompar__cmp_gt0000_cy<135>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<136> (Mcompar__cmp_gt0000_cy<136>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<137> (Mcompar__cmp_gt0000_cy<137>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<138> (Mcompar__cmp_gt0000_cy<138>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<139> (Mcompar__cmp_gt0000_cy<139>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<140> (Mcompar__cmp_gt0000_cy<140>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<141> (Mcompar__cmp_gt0000_cy<141>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<142> (Mcompar__cmp_gt0000_cy<142>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<143> (Mcompar__cmp_gt0000_cy<143>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<144> (Mcompar__cmp_gt0000_cy<144>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<145> (Mcompar__cmp_gt0000_cy<145>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<146> (Mcompar__cmp_gt0000_cy<146>)
+     MUXCY:CI->O           1   0.044   0.000  Mcompar__cmp_gt0000_cy<147> (Mcompar__cmp_gt0000_cy<147>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<148> (Mcompar__cmp_gt0000_cy<148>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<149> (Mcompar__cmp_gt0000_cy<149>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<150> (Mcompar__cmp_gt0000_cy<150>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<151> (Mcompar__cmp_gt0000_cy<151>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<152> (Mcompar__cmp_gt0000_cy<152>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<153> (Mcompar__cmp_gt0000_cy<153>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<154> (Mcompar__cmp_gt0000_cy<154>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<155> (Mcompar__cmp_gt0000_cy<155>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<156> (Mcompar__cmp_gt0000_cy<156>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<157> (Mcompar__cmp_gt0000_cy<157>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<158> (Mcompar__cmp_gt0000_cy<158>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<159> (Mcompar__cmp_gt0000_cy<159>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<160> (Mcompar__cmp_gt0000_cy<160>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<161> (Mcompar__cmp_gt0000_cy<161>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar__cmp_gt0000_cy<162> (Mcompar__cmp_gt0000_cy<162>)
+     MUXCY:CI->O          55   0.369   1.286  Mcompar__cmp_gt0000_cy<163> (Mcompar__cmp_gt0000_cy<163>)
+     LUT4_D:I3->O         17   0.195   0.862  enA1_16 (enA115)
+     LUT3:I2->O            1   0.195   0.000  celda_reg_A/RegA_20_rstpot (N1150)
+     FDR:D                     0.391          celda_reg_A/RegA_20
+    ----------------------------------------
+    Total                     12.193ns (9.281ns logic, 2.913ns route)
+                                       (76.1% logic, 23.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1796 / 822
+-------------------------------------------------------------------------
+Offset:              4.522ns (Levels of Logic = 3)
+  Source:            rst (PAD)
+  Destination:       celda_reg_V/RegV_10 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to celda_reg_V/RegV_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3:I1->O          320   0.195   2.656  c511 (c5)
+     LUT4:I0->O            1   0.195   0.712  celda_reg_V/toV<91>1 (celda_reg_V/toV<91>)
+     LUT3:I1->O            1   0.195   0.000  celda_reg_V/RegV_91_rstpot (N766)
+     FD:D                      0.391          celda_reg_V/RegV_91
+    ----------------------------------------
+    Total                      4.522ns (1.154ns logic, 3.368ns route)
+                                       (25.5% logic, 74.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 164 / 164
+-------------------------------------------------------------------------
+Offset:              0.360ns (Levels of Logic = 0)
+  Source:            done (FF)
+  Destination:       done (PAD)
+  Source Clock:      clk rising
+
+  Data Path: done to done
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             0   0.360   0.000  done (done)
+    ----------------------------------------
+    Total                      0.360ns (0.360ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+CPU : 49.63 / 49.75 s | Elapsed : 50.00 / 50.00 s
+ 
+--> 
+
+Total memory usage is 205428 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   14 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

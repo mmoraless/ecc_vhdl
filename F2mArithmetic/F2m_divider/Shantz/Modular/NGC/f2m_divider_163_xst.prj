@@ -1,0 +1,5 @@
+vhdl ecc_core_v1_00_a ../../celda_A.vhd
+vhdl ecc_core_v1_00_a ../../celda_B.vhd
+vhdl ecc_core_v1_00_a ../../celda_U.vhd
+vhdl ecc_core_v1_00_a ../../celda_V.vhd
+vhdl ecc_core_v1_00_a ../../shantz_modular.vhd

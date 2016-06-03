@@ -1,0 +1,10 @@
+run
+-opt_mode speed
+-opt_level 1
+-p xc4vfx12ff668-10
+-top f2m_divider_163
+-ifmt MIXED
+-ifn f2m_divider_163_xst.prj
+-ofn f2m_divider_163.ngc
+-hierarchy_separator /
+-iobuf NO
